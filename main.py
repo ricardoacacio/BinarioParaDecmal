@@ -23,7 +23,7 @@ while cont <= qtd:
             aux = aux + (base * cont)
             cont = cont + 1
             exp = exp + 1
-    else:
+    else: # essa parte está dando erro
         aux = aux * base * int(num[cont])
         cont = cont + 1
         exp = exp + 1
