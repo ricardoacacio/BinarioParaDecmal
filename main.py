@@ -16,21 +16,18 @@ quantidade = len(numero)
 while contador <= quantidade:
     if expoente == 0:
          resultado = (1 * int(numero[quantidade - 1]))
-
     elif expoente == 1:
          resultado = resultado + (base * int(numero[quantidade - 2]))
     else:
-        c = 2
-        q = quantidade
-
-        while c < quantidade:
-            r = 2
-            r = (r * base) * int(numero[(quantidade - c) - 1])
-            c = c + 1
-
-            resultado = resultado + r
+       c = 0
+       r = 1
+       while c < expoente:
+           r = r * base
+           c = c + 1
+       res = r * int(numero[(quantidade - expoente)-1])
+       resultado = resultado + res
     contador = contador + 1
-    expoente += 1
+    expoente = expoente + 1
 print(resultado)
 
 
